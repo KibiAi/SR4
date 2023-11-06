@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #4285f4; /* Google's brand color */
+    background-color: #4285f4; 
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -48,7 +48,7 @@ input {
 }
 
 .search-button {
-    background-color: #4285f4; /* Google's brand color */
+    background-color: #4285f4; 
     color: #fff;
     border: none;
     border-radius: 5px;

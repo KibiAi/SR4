@@ -34,14 +34,16 @@
     </header>
     <div class="search-box">
         <input type="text" id="search-input" placeholder="Введіть текст для пошуку зображень" />
-        <form action="https://www.google.com/search" method="GET">
-        <button class="search-button" onclick="performImageSearch()">Пошук зображень</button>
+        <form action="https://www.google.com/images" method="GET" name="gs" id="gs">
+            <input type="hidden" name="q" value=""> 
+            <button type="submit" class="search-button" onclick="performImageSearch()">Пошук зображень</button>
         </form>
     </div>
     <script>
         function performImageSearch() {
-            
             var searchQuery = document.getElementById("search-input").value;
+            var form = document.getElementById("gs");
+            form.querySelector('input[name="q"]').value = searchQuery; 
         }
     </script>
 </body>

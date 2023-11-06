@@ -15,7 +15,7 @@
         .search-button {
             text-align: center;
             padding: 10px;
-            background-color: #4285f4; 
+            background-color: #4285f4;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -23,17 +23,6 @@
         }
         .search-button:hover {
             background-color: #3579dc; 
-        }
-        .lucky-button {
-            background-color: #34a853; 
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-        .lucky-button:hover {
-            background-color: #2d8c4e; 
         }
     </style>
 </head>
@@ -45,14 +34,17 @@
     </header>
     <div class="search-box">
         <input type="text" id="search-input" placeholder="Введіть текст для пошуку" />
-        <button class="search-button" onclick="performSearch()">Пошук Google</button>
-        <a href="https://www.google.com/search?q=" id="lucky-button" class="lucky-button">Мені пощастить</a>
+        <form action="https://www.google.com/search" method="GET" id="search-form">
+            <input type="hidden" name="q" value="">
+            <button type="submit" class="search-button" onclick="performSearch()">Пошук Google</button>
+        </form>
     </div>
     <script>
         function performSearch() {
-            
             var searchQuery = document.getElementById("search-input").value;
-           
+            var form = document.getElementById("search-form");
+            form.action = "https://www.google.com/search"; 
+            form.querySelector('input[name="q"]').value = searchQuery; 
         }
     </script>
 </body>
