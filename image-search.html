@@ -29,12 +29,14 @@
 <body>
     <header>
         <h1>Пошук зображень Google</h1>
-        <a href="search.html">Пошук Google</a>
+        <a href="index.html">Пошук Google</a>
         <a href="advanced-search.html">Розширений пошук</a>
     </header>
     <div class="search-box">
         <input type="text" id="search-input" placeholder="Введіть текст для пошуку зображень" />
+        <form action="https://www.google.com/search" method="GET">
         <button class="search-button" onclick="performImageSearch()">Пошук зображень</button>
+        </form>
     </div>
     <script>
         function performImageSearch() {
