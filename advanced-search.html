@@ -15,14 +15,14 @@
         .search-button {
             text-align: center;
             padding: 10px;
-            background-color: #4285f4; /* Google's brand color */
+            background-color: #4285f4; 
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         .search-button:hover {
-            background-color: #3579dc; /* Hover color */
+            background-color: #3579dc; 
         }
     </style>
 </head>
@@ -33,7 +33,6 @@
         <a href="image-search.html">Пошук зображень</a>
     </header>
     <div class="search-box">
-        <!-- Додайте поля для розширеного пошуку -->
         <input type="text" id="all-words" placeholder="Знайти сторінки із... «усіма цими словами»">
         <input type="text" id="exact-phrase" placeholder="Знайти сторінки з... «саме цим словом або фразою»">
         <input type="text" id="any-words" placeholder="Знайти сторінки з... «будь-яким із цих слів»">
@@ -44,12 +43,12 @@
     </div>
     <script>
         function performAdvancedSearch() {
-            // Отримайте значення полів розширеного пошуку і виконайте розширений пошук
+
             var allWords = document.getElementById("all-words").value;
             var exactPhrase = document.getElementById("exact-phrase").value;
             var anyWords = document.getElementById("any-words").value;
             var noneWords = document.getElementById("none-words").value;
-            // Ваша логіка для розширеного пошуку
+            
         }
     </script>
     
