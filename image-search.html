@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пошук зображень Google</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .search-box {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            width: 60%;
+            margin: 0 auto;
+        }
+        .search-button {
+            text-align: center;
+            padding: 10px;
+            background-color: #4285f4; /* Google's brand color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #3579dc; /* Hover color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Пошук зображень Google</h1>
+        <a href="search.html">Пошук Google</a>
+        <a href="advanced-search.html">Розширений пошук</a>
+    </header>
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Введіть текст для пошуку зображень" />
+        <button class="search-button" onclick="performImageSearch()">Пошук зображень</button>
+    </div>
+    <script>
+        function performImageSearch() {
+            // Отримайте значення текстового поля і виконайте пошук зображень
+            var searchQuery = document.getElementById("search-input").value;
+        }
+    </script>
+</body>
+</html>
